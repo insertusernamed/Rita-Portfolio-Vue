@@ -1,15 +1,19 @@
 <template>
-    <h1>Hello World</h1>
-    <ProjectList />
-    <CertList />
+    <CircuitBackground />
+    <div class="app-content">
+        <h1>Hello World</h1>
+        <ProjectList />
+        <CertList />
+    </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import { useProjectStore } from './stores/projectStore';
-import { useCertStore } from './stores/certificationStore';
-import ProjectList from './components/ProjectList.vue';
-import CertList from './components/CertList.vue';
+import { onMounted } from "vue";
+import { useProjectStore } from "./stores/projectStore";
+import { useCertStore } from "./stores/certificationStore";
+import ProjectList from "./components/ProjectList.vue";
+import CertList from "./components/CertList.vue";
+import CircuitBackground from "./components/CircuitBackground.vue";
 
 const projectStore = useProjectStore();
 const certStore = useCertStore();
