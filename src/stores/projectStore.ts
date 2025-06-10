@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
+import type { Project } from '../models/Project'
 
 export const useProjectStore = defineStore('project', {
-    state: () => ({ projects: [] }),
+    state: () => ({ projects: [] as Project[] }),
     actions: {
         fetchProjects() {
             axios.get(import.meta.env.VITE_FETCH_PROJECTS)

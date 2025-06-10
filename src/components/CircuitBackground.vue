@@ -27,13 +27,10 @@ body {
   overflow-y: auto;
   -ms-overflow-style: ms-autohiding-scrollbar;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-style: -ms-autohiding-scrollbar;
-  overflow-style: ms-autohiding-scrollbar;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -ms-overflow-scrolling: touch;
   -o-overflow-scrolling: touch;
-  overflow-scrolling: touch;
   -webkit-overscroll-behavior: none;
   -moz-overscroll-behavior: none;
   -ms-overscroll-behavior: none;
@@ -54,7 +51,6 @@ body {
   image-rendering: -o-pixelated;
   image-rendering: pixelated;
   -ms-interpolation-mode: nearest-neighbor;
-  interpolation-mode: nearest-neighbor;
   overflow: hidden;
   -webkit-contain: strict;
   -moz-contain: strict;
@@ -74,7 +70,6 @@ a.header {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  flex-align: center;
   background-color: #404040;
   background-image: url("../assets/Background2.png");
   -webkit-background-size: 25rem 25rem;
@@ -92,6 +87,7 @@ a.header {
   position: absolute;
   content: " ";
   background-image: url("../assets/animation2.svg");
+  filter: opacity(0.2);
   -webkit-background-size: 75rem 50rem;
   -moz-background-size: 75rem 50rem;
   -ms-background-size: 75rem 50rem;

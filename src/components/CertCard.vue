@@ -26,7 +26,7 @@ interface CertCardProps {
   media: MediaItem[];
 }
 
-const props = defineProps<CertCardProps>();
+defineProps<CertCardProps>();
 </script>
 
 <style scoped>

@@ -1,10 +1,9 @@
 <template>
-    <CircuitBackground />
-    <div class="app-content">
-        <h1>Hello World</h1>
-        <ProjectList />
-        <CertList />
-    </div>
+  <CircuitBackground />
+  <div class="app-content">
+    <ProjectList />
+    <CertList />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -19,7 +18,7 @@ const projectStore = useProjectStore();
 const certStore = useCertStore();
 
 onMounted(() => {
-    projectStore.fetchProjects();
-    certStore.fetchCerts();
+  projectStore.fetchProjects();
+  certStore.fetchCerts();
 });
 </script>
